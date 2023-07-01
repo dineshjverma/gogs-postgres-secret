@@ -7,7 +7,7 @@ This Git repository contains the deployment configuration and related files for 
 The deployment is organized into two separate Kubernetes namespaces: **"frontend"** and **"backend".** The **"frontend"** namespace hosts the **Gogs** service **A painless self-hosted Git service**, while the **"backend"** namespace contains the **Postgres** as **Database**.
 
 To securely connect Gogs with the Postgres backend, the repository includes a Kubernetes Secret configuration that stores the necessary connection details. The Secret includes the following information:
-
+- To connect to host: **postgres.backend.svc.cluster.local**
 - User: **root**
 - Password: **alexa**
 - Database: **unnati**
